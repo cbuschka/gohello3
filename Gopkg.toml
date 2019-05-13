@@ -24,6 +24,8 @@
 #   go-tests = true
 #   unused-packages = true
 
+required = []
+
 [prune]
   go-tests = true
   unused-packages = true

@@ -3,15 +3,21 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:0ce736401aff664e63506da268c12590219fc4f854fb3b95ad64b96404622c2d"
+  digest = "1:b78f0ff4cfc4399577c5677b7cb093d162791e4a2f2d8c92968031a8f1eac182"
   name = "github.com/cbuschka/gohello"
-  packages = ["."]
+  packages = [
+    ".",
+    "pkg/gohello",
+  ]
   pruneopts = "UT"
   revision = "ef10def30b69d1b553e951c41535b445600cc621"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/cbuschka/gohello"]
+  input-imports = [
+    "github.com/cbuschka/gohello",
+    "github.com/cbuschka/gohello/pkg/gohello",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
